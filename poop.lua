@@ -1,14 +1,5 @@
-speeds = 1
- 
-local speaker = game:GetService("Players").LocalPlayer
- 
-local chr = game.Players.LocalPlayer.Character
-local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
- 
-nowe = false
- 
-	if nowe == true then
-		nowe = false
+if nowe == true then
+	nowe = false
  
 		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Climbing,true)
 		speaker.Character.Humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown,true)
