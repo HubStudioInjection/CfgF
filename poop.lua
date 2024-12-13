@@ -1,3 +1,9 @@
+speeds = 1
+local speaker = game:GetService("Players").LocalPlayer
+local chr = game.Players.LocalPlayer.Character
+local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
+nowe = false
+script.Parent.MouseButton1Click:Connect(function()
 if nowe == true then
 	nowe = false
  
@@ -169,3 +175,4 @@ if nowe == true then
 		game.Players.LocalPlayer.Character.Animate.Disabled = false
 		tpwalking = false
 	end
+end)
